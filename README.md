@@ -4,38 +4,37 @@
 
 - Install "tailwindcss" via npm:
 
-  "npm install -D tailwindcss"
+  `npm install -D tailwindcss`
 
 - Create your "tailwind.config.js" file
 
-  "npx tailwindcss init
+  `npx tailwindcss init`
 
 ## Configure your template paths
 
-/** @type {import('tailwindcss').Config} \*/
-module.exports = {
-content: ["./src/**/\*.{html,js}"],
+/** @type {import('tailwindcss').Config} */
 
+`module.exports = {
+content: ["./src/**/\*.{html,js}"],
 theme: {
 extend: {},
 },
-
 plugins: [],
-}
+}`
 
 ## Add the tailwind directives to your css
 
 Add the @tailwind directives for each of Tailwind’s layers to your main CSS file.
 
-@tailwind base;
+`@tailwind base`;
 
-@tailwind components;
+`@tailwind components`;
 
-@tailwind utilities;
+`@tailwind utilities;`
 
 ## Start the Tailwind CLI build process
 
-npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+`npx tailwindcss -i ./src/input.css -o ./src/output.css --watch`
 
 ## Start using Tailwind in your HTML
 
